@@ -42,7 +42,7 @@
 - [x] Create meal management interface (edit, delete, mark as sold out)
 - [x] Add store profile management
 - [x] Implement meal availability time settings
-- [ ] Add order management view
+- [x] Add order management view
 
 ## Phase 6: Polish & Testing
 - [x] Write vitest tests for critical flows

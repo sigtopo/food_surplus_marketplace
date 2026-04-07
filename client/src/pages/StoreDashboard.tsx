@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { useLocation } from "wouter";
-import { Plus, Edit2, Trash2, Eye, EyeOff } from "lucide-react";
+import { Plus, Edit2, Trash2 } from "lucide-react";
 import { trpc } from "@/lib/trpc";
 import { useState } from "react";
 import { toast } from "sonner";
@@ -193,6 +193,13 @@ export default function StoreDashboard() {
                   >
                     <Plus className="w-4 h-4" />
                     {language === "en" ? "Add Meal" : "إضافة وجبة"}
+                  </Button>
+                  <Button
+                    onClick={() => setLocation("/store-orders")}
+                    variant="outline"
+                    className="w-full"
+                  >
+                    {language === "en" ? "View Orders" : "عرض الطلبات"}
                   </Button>
                 </CardContent>
               </Card>

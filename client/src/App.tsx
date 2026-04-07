@@ -14,6 +14,7 @@ import MealDetail from "./pages/MealDetail";
 import Cart from "./pages/Cart";
 import Checkout from "./pages/Checkout";
 import StoreDashboard from "./pages/StoreDashboard";
+import StoreOrders from "./pages/StoreOrders";
 
 function Router() {
   return (
@@ -26,6 +27,7 @@ function Router() {
       <Route path={"/map"} component={MapPageV2} />
       <Route path={"/store-register"} component={StoreRegister} />
       <Route path={"/store-dashboard"} component={StoreDashboard} />
+      <Route path={"/store-orders"} component={StoreOrders} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
